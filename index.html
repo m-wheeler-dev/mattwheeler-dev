@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="myStyle.css">
+   <title>MattWheeler-Dev</title>
+</head>
+<body>
+
+   <nav id="navbar">
+      <a href="#top" class="nav-link">INTRO<i class="fa-regular fa-user"></i></a>
+      <a href="#about" class="nav-link">ABOUT<i class="fa-solid fa-clipboard-list"></i></a>
+      <a href="#projects" class="nav-link">PROJECTS<i class="fa-solid fa-laptop-code"></i></a>
+      <a href="#contact" class="nav-link">CONTACT<i class="fa-regular fa-paper-plane"></i></a>
+   </nav>
+
+   <div id="logo">
+      <img src="/images/corgi-logo.png" alt="logo of corgi with monocle and tie" title="This is Winston, the corgi I've always wanted!"/>
+   </div>
+
+   <section id="introduction">
+      <div id="intro">
+         <span>Hello, </span>
+         <span>my name is</span>
+         <span>Matthew Wheeler,</span>
+         <span>I'm a Web Developer <i class="fa-solid fa-code"></i></span>
+      </div>
+   </section> 
+   
+   <section class="category" id="about">
+      <h2 class="title">About Me:</h2>
+      <p>
+         Don't worry, I'll skip the ancient history and go straight to the fun parts! I never thought I would get close to being a Web Developer, I was always working manual labor jobs and I enjoyed it so I wasn't concerned that I had no idea what HTML was. Fast forward to May, 2016... I was injured at work, and ended up with a permanent knee injury.
+      </p>
+      
+      <p>
+         After 3 years of trying to recover, the insurance company finally agreed to a retraining program. With the budget and location, I decided to attend Edmonds College and pursue an Associate's Degree in Web Development. I ended up maintaining a 3.9GPA and being on the honor roll all 8 quarters. It turns out I really enjoy dev work, and I might even be good at it! I received my Associate's of Technical Arts Degree in Web Application and Cloud Development in August 2021.
+      </p>
+
+      <p>
+         Since graduating I've been networking, applying, learning, and making projects all the time to grow and better myself both personally and as a developer. In March of 2022 I was given the opportunity of a Software Engineer Internship at StudySoup. My work there revolved around updating their user experience while learning as much as I could. I learned more in those 10 weeks than I ever thought I would, and I'm very grateful to have that experience. 
+      </p>
+   </section>
+
+   <section class="category" id="projects">
+      <h2>Some of my work:</h2>
+      <div class="project">
+         <p class="project-text"> 
+            Most of my work at StudySoup involved updating the user experience by redesigning the main pages of their primary purchase flow. While the simplest piece I worked on, the quick redesign I made of the site's footer area was a big hit and an excellent way to dive into Ruby on Rails and Foundation CSS!
+         </p>
+         <img class="project-img" src="images/StudySoup/footer-mobile.png" alt="My redesign of StudySoup's footer area">
+      </div>
+
+      <div class="project"> 
+         <img class="project-img" src="images/projects/corgi-boxes-thumb.png" />
+         <p class="project-text"> 
+            While still simple, this is one of my favorites! The magic button causes the square to separate into multiple or bring them all back together into one. It was an excellent way to practice CSS animations and JavaScript, and it's a corgi gif so you're welcome! <br/>
+            <button id="corgi-btn" class="project-btn">
+               <a href="https://m-wheeler93.github.io/boxes/" target="_blank">
+               View Project <i class="fa-solid fa-up-right-from-square"></i>
+               </a>
+            </button>               
+         </p>        
+      </div>
+   </section>
+
+   <section class="category" id="react-apps">
+      <h2>ReactJS Demos:</h2>
+   
+      <div class="react-project"> 
+         <video class="react-video" controls muted>
+            <source src="videos/todo_list_demo (720p).mp4">
+         </video> 
+         <h3>Todo List</h3> 
+      </div>
+   
+      <div class="react-project"> 
+         <video class="react-video" controls muted>
+            <source src="videos/dice_game_demo (720p).mp4">
+         </video> 
+         <h3>Dice Roll</h3> 
+      </div>
+   
+      <div class="react-project"> 
+         <video class="react-video" controls muted>
+            <source src="videos/pokemon_battle_demo (1080p).mp4">
+         </video> 
+         <h3>Random Pokemon "Battle"</h3> 
+      </div>
+   
+   </section>
+
+   <section class="category" id="contact">
+      <h2> CONTACT ME </h2>
+      <form id="contact-form" action="https://formspree.io/f/xlezjwor" method="POST">
+
+         <label for="_replyto">Email: 
+            <br>
+            <input type="email" name="_replyto" placeholder="Please enter your Email...">
+         </label>
+         <br>
+
+         <label for="message"> Message: 
+            <br>
+            <textarea name="message" placeholder="Type your message here..."></textarea>
+         </label>
+         <br>
+
+         <button type="submit">Send It!
+            <i class="fa-regular fa-paper-plane"></i>
+         </button>
+         
+      </form>
+      <p>Submissions powered by Formspree!</p>
+   </section>
+
+   <footer>
+      <p>
+         Find me:
+         <a href="https://github.com/m-wheeler93" target="_blank">
+            <i class="fa-brands fa-github"></i>
+         </a>
+         <a href="https://github.com/m-wheeler93" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+         </a>
+         <br/>
+         Let's make some magic!
+         <i class="fa-solid fa-wand-sparkles"></i>
+      </p>
+   </footer>
+   
+   <script src="https://kit.fontawesome.com/1e723eb9a7.js" crossorigin="anonymous"></script>
+  <script src="myScript.js"></script>
+</body>
+</html>
