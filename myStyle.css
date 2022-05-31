@@ -328,7 +328,7 @@ footer a i:hover {
    /* BUTTONS (just need to prevent iOS reformatting) */
    button {
       -webkit-appearance: none;
-
+      background-color: whitesmoke;
    }
 
    /* NAVBAR */
