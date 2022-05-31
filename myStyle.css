@@ -307,3 +307,88 @@ footer a i:hover {
    cursor: pointer;
    transform: scale(1.3);
 }
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px){
+
+   html {
+      overflow-x: hidden;
+   }
+
+   /* BUTTONS */
+   button {
+      width: auto;
+      height: 2.5rem;
+      margin: 0.5rem auto;
+   }
+
+   /* NAVBAR */
+   #navbar {
+      height: 2rem;
+      font-size: 0.8rem;
+   }
+
+   #navbar a {
+      margin: 0.5rem;
+   }
+
+   /* CORGI LOGO */
+   #logo {
+      height: 4rem;
+      top:2.1rem
+   }
+   
+   /* ANIMATED INTRO */
+   #introduction {
+      margin: 2rem auto;
+   }
+
+   #intro {
+      font-size: 1.8rem;
+   }
+
+   /* SECTIONS */
+   .category::before {
+      height: 1rem;
+   }
+
+   .category h2 {
+      margin-bottom: 0.5rem;
+   }
+
+   /* PROJECTS */
+   .project, .react-project {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .project-text {
+      width: 80%;
+   }
+
+   .project-img { 
+      width: 75%;
+      margin: 1rem 0;
+   }
+
+   /* REACT APPS */
+   #react-apps {
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   /* CONTACT */
+   #contact-form {
+      width: 95%;
+   }
+
+   input, textarea {
+      width: 80%;
+   }
+
+}
