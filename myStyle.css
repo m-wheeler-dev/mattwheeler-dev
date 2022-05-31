@@ -319,6 +319,11 @@ footer a i:hover {
    html {
       overflow-x: hidden;
    }
+   
+   /* BUTTONS (just need to prevent iOS reformatting) */
+   button {
+      -webkit-appearance: none;
+   }
 
    /* NAVBAR */
    #navbar {
