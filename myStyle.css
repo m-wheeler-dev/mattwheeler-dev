@@ -45,13 +45,13 @@ button {
    cursor: pointer;
 }
 
-#corgi-btn:hover {
-   background-color: var(--yellow);
+button a {
+   font-weight: bold;
+   color: var(--gray);
 }
 
 button:hover {
-   transform: scale(1.1);
-   background-color: var(--green);
+   transform: scale(1.3);
 }
 
 /* NAVBAR */
@@ -225,6 +225,10 @@ button:hover {
 }
 
 /* PROJECTS */
+#projects button:hover {
+   background-color: var(--green);
+}
+
 .project, .react-project {
    width: 100%;
    display: flex;
@@ -239,11 +243,6 @@ button:hover {
 .project-img { 
    width: 45%;
    box-shadow: var(--global-shadow);
-}
-
-#corgi-btn a {
-   color: var(--gray);
-   font-weight: bold;
 }
 
 /* REACT APPS */
@@ -278,6 +277,10 @@ button:hover {
    text-align: center;
 }
 
+#contact button:hover {
+   background-color: var(--blue);
+}
+
 input, textarea {
    width: 60%;
    margin: 0.5rem auto 1rem auto;
@@ -305,11 +308,13 @@ footer a {
 
 footer a i:hover {
    cursor: pointer;
-   transform: scale(1.3);
+   transform: scale(1.3);   
+   color: var(--blue);
 }
 
-
-
+#resume:hover {
+   color: var(--blue);
+}
 
 
 
@@ -319,11 +324,11 @@ footer a i:hover {
    html {
       overflow-x: hidden;
    }
-   
+
    /* BUTTONS (just need to prevent iOS reformatting) */
    button {
       -webkit-appearance: none;
-      background-color: whitesmoke;
+
    }
 
    /* NAVBAR */
