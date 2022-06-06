@@ -225,10 +225,6 @@ button:hover {
 }
 
 /* PROJECTS */
-#projects button:hover {
-   background-color: var(--green);
-}
-
 .project, .react-project {
    width: 100%;
    display: flex;
@@ -237,12 +233,17 @@ button:hover {
 }
 
 .project-text {
-   width: 45%;
+   width: 50%;
 }
 
 .project-img { 
-   width: 45%;
+   width: 40%;
+   border: 0.1rem solid rgba(200, 200, 200, 0.1);
    box-shadow: var(--global-shadow);
+}
+
+#projects button:hover {
+   background-color: var(--green);
 }
 
 /* REACT APPS */
@@ -328,7 +329,7 @@ footer a i:hover {
    /* BUTTONS (just need to prevent iOS reformatting) */
    button {
       -webkit-appearance: none;
-      background-color: whitesmoke;
+
    }
 
    /* NAVBAR */
