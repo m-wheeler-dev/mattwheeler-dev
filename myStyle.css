@@ -9,6 +9,7 @@
    --blue: #005acf;
    --speed: 1s;
    --global-shadow: 0 0 1rem 0.5rem black;
+   --global-shadow-light:  0 0 0.4rem 0.1rem black;
 }
 
 /* GLOBAL DEFAULTS */
@@ -34,15 +35,20 @@ a {
    text-decoration: none;
 }
 
+.active {
+    font-weight: bold;
+ }
+
 /* BUTTONS */
 button {
+   cursor: pointer;
    width: auto;
    height: 2.5rem;
    margin: 0.5rem auto;
    color: var(--gray);
    font-weight: bold;
    box-shadow: var(--global-shadow);
-   cursor: pointer;
+   transition: all 0.5s ease-in-out;
 }
 
 button a {
@@ -51,7 +57,7 @@ button a {
 }
 
 button:hover {
-   transform: scale(1.3);
+   transform: scale(1.3);  
 }
 
 /* NAVBAR */
@@ -75,24 +81,36 @@ button:hover {
    margin: 1rem;
 }
 
-#navbar a:nth-of-type(1):hover, #navbar a:nth-of-type(1).active {
+#navbar a:nth-of-type(1):hover, 
+#navbar a:nth-of-type(1).active {
    color: var(--red);
 }
 
-#navbar a:nth-of-type(2):hover, #navbar a:nth-of-type(2).active {
+#navbar a:nth-of-type(2):hover, 
+#navbar a:nth-of-type(2).active {
    color: var(--yellow);
 }
 
-#navbar a:nth-of-type(3):hover, #navbar a:nth-of-type(3).active {
+#navbar a:nth-of-type(3):hover, 
+#navbar a:nth-of-type(3).active {
    color: var(--green);
 }
 
-#navbar a:nth-of-type(4):hover, #navbar a:nth-of-type(4).active {
+#navbar a:nth-of-type(4):hover, 
+#navbar a:nth-of-type(4).active {
    color: var(--blue);
 }
 
-.active {
-   font-weight: bold;
+#toggler {
+    cursor: pointer;
+    position: fixed;
+    top: 0.7rem;
+    right: 1rem;
+    transition: all 1s;
+}
+
+#toggler:hover {
+    transform: scale(1.2) rotateZ(360deg);
 }
 
 /* CORGI LOGO */
@@ -225,21 +243,34 @@ button:hover {
 }
 
 /* PROJECTS */
-.project, .react-project {
-   width: 100%;
+#projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project {
+   width: 45%;
    display: flex;
+   flex-direction: column;
    justify-content: space-evenly;
-   margin: 1.3rem auto;
+   align-items: center;
+   margin-top: 1.5rem;
 }
 
 .project-text {
-   width: 50%;
+   width: 75%;
 }
 
 .project-img { 
-   width: 40%;
+   width: 60%;
+   margin: 1rem auto;
    border: 0.1rem solid rgba(200, 200, 200, 0.1);
    box-shadow: var(--global-shadow);
+}
+
+#projects button {
+    margin: 1rem auto;
 }
 
 #projects button:hover {
@@ -256,6 +287,7 @@ button:hover {
    width: 40%;
    display: flex;
    flex-direction: column;
+   margin: 1rem auto;
 }
 
 .react-video {
@@ -307,15 +339,106 @@ footer a {
    margin: 0 0.5rem;
 }
 
+footer a i {
+   transition: all 0.5s ease-in-out;
+}
+
 footer a i:hover {
    cursor: pointer;
    transform: scale(1.3);   
    color: var(--blue);
 }
 
-#resume:hover {
-   color: var(--blue);
+#magic {
+    animation-name: wand;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
+
+#magic:hover {
+    animation-name: wand-waving;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wand {
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes wand-waving {
+    0% {
+        transform: rotateZ(5deg) scale(1.1);
+        color: var(--red);
+    }
+    25% {
+        transform: rotateZ(-5deg) scale(0.9);
+        color: var(--yellow);
+    }
+    50% {
+        transform: rotateZ(20deg) scale(1.2);
+        color: var(--green);
+    } 
+    100% {
+        transform: rotateZ(-20deg) scale(1);
+        color: var(--blue);
+    }
+}
+
+
+
+
+
+/* LIGHT MODE */
+body.light {
+    background-color: rgb(255, 250, 234);
+    color: black;
+}
+
+ /* BUTTONS */
+ body.light button {
+    box-shadow: var(--global-shadow-light);
+ }
+ 
+ /* NAVBAR */
+ body.light #navbar {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0.5rem 0.1rem black;
+ }
+ 
+ body.light #navbar a {
+    color: black;
+ }
+
+ /* SECTIONS */
+ body.light  .category {
+    box-shadow: var(--global-shadow-light);
+ }
+
+ /* PROJECTS */
+ body.light .project-img { 
+    box-shadow: var(--global-shadow-light);
+ }
+ 
+ /* REACT APPS */
+ body.light .react-video {
+    box-shadow: var(--global-shadow-light);
+ }
+ 
+ /* FOOTER */
+ body.light footer {
+    color: black;
+ }
+ 
+ body.light footer a {
+    color: black;
+ }
+ 
+
 
 
 
@@ -326,10 +449,9 @@ footer a i:hover {
       overflow-x: hidden;
    }
 
-   /* BUTTONS (just need to prevent iOS reformatting) */
+   /* BUTTONS (just need to prevent iOS default reformatting) */
    button {
       -webkit-appearance: none;
-
    }
 
    /* NAVBAR */
@@ -367,7 +489,7 @@ footer a i:hover {
    }
 
    /* PROJECTS */
-   .project, .react-project {
+   .project {
       flex-direction: column;
       align-items: center;
    }
@@ -383,8 +505,11 @@ footer a i:hover {
 
    /* REACT APPS */
    #react-apps {
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
+   }
+
+   .react-project {
+      width: 80%;
    }
 
    /* CONTACT */
@@ -397,3 +522,4 @@ footer a i:hover {
    }
 
 }
+

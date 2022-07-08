@@ -13,3 +13,11 @@ function activeLink() {
  
  activeLink();
  window.addEventListener('scroll', activeLink);
+
+//  DARK / LIGHT MODE TOGGLE
+ const body = document.querySelector('body');
+ const toggleBtn = document.querySelector('#toggler');
+
+ toggleBtn.addEventListener('click', () => {
+    body.classList.toggle("light");
+ });

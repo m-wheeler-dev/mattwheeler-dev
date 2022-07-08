@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="myStyle.css">
    <title>MattWheeler-Dev</title>
+   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
 
@@ -14,10 +15,11 @@
       <a href="#about" class="nav-link">ABOUT<i class="fa-solid fa-clipboard-list"></i></a>
       <a href="#projects" class="nav-link">PROJECTS<i class="fa-solid fa-laptop-code"></i></a>
       <a href="#contact" class="nav-link">CONTACT<i class="fa-regular fa-paper-plane"></i></a>
+      <i class="fa-regular fa-lightbulb" id="toggler" title="Toggle between Light & Dark modes"></i>
    </nav>
 
    <div id="logo">
-      <img src="images/corgi-logo.png" alt="logo of corgi with monocle and tie" title="This is Winston, the corgi I've always wanted!"/>
+      <img src="/images/corgi-logo.png" alt="logo of corgi with monocle and tie" title="This is Winston, the corgi I've always wanted!"/>
    </div>
 
    <section id="introduction">
@@ -47,34 +49,46 @@
    <section class="category" id="projects">
       <h2>Some of my work:</h2>
       <div class="project">
-         <img class="project-img" src="images/StudySoup/footer-mobile.png" alt="My redesign of StudySoup's footer area">
+         <img class="project-img" src="images/StudySoup/reviews-example.png" alt="My redesign of StudySoup's solution page with reviews">
          <p class="project-text"> 
-            Most of my work at StudySoup involved updating the user experience by redesigning the main pages of their primary purchase flow. While the simplest piece I worked on, the quick redesign I made of the site's footer area was a big hit and an excellent way to dive into Ruby on Rails and Foundation CSS!
+            Some of my work from Study Soup, where I primarily assisted on updating the User Experience. This internship was an excellent way to dive into Ruby on Rails and Foundation CSS!
          </p>
       </div>
 
       <div class="project"> 
-         <img class="project-img" src="images/projects/corgi-boxes-thumb.png" alt="Thumbnail of corgi gif 3d boxes page" />
+        <img class="project-img" src="images/projects/memory-game-thumb.png" alt="Thumbnail of memory game" />
+        <p class="project-text"> 
+           Quick and easy version of a memory game. The white dog is Cooper, and the white cat was Max! Sadly, I've never had a red panda for a pet...
+        </p>               
+        <button class="project-btn" class="project-btn">
+            <a href="https://m-wheeler93.github.io/memory/" target="_blank">
+            View Project <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+         </button>  
+     </div>
+
+      <div class="project"> 
+         <img class="project-img" src="images/projects/space-invaders-thumb.png" alt="Thumbnail of space invaders" />
          <p class="project-text"> 
-            While still simple, this is one of my favorites! The magic button causes the square to separate into multiple or bring them all back together into one. It was an excellent way to practice CSS animations and JavaScript, and it's a corgi gif so you're welcome! <br/>
-            <button class="project-btn" class="project-btn">
-               <a href="https://m-wheeler93.github.io/boxes/" target="_blank">
-               View Project <i class="fa-solid fa-up-right-from-square"></i>
-               </a>
-            </button>               
-         </p>        
+            My simple take on Space Invaders, using HTML Canvas and Vanilla JavaScript. Have fun!
+         </p>  
+         <button class="project-btn" class="project-btn">
+            <a href="https://m-wheeler93.github.io/space-invaders/" target="_blank">
+            View Project <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+         </button>          
       </div>
 
       <div class="project"> 
          <img class="project-img" src="images/projects/hover-colors-thumb.png" alt="Thumbnail of hover colors page" />
          <p class="project-text"> 
-            This project was a big part of my current comfort level with JavaScript. Before I started the Hover Color project, I planned everything out and decided I wanted it to rely on JS as much as possible since I was already quite comfortable with HTML and CSS. From loading the squares, to randomizing the colors and then fading them out, this project is all about the JS! <br/>
-            <button class="project-btn" class="project-btn">
-               <a href="https://m-wheeler93.github.io/hovers/" target="_blank">
-               View Project <i class="fa-solid fa-up-right-from-square"></i>
-               </a>
-            </button>               
-         </p>        
+            From loading the squares, to randomizing the colors and then fading them out, this project is all about the JS! 
+         </p>    
+         <button class="project-btn" class="project-btn">
+            <a href="https://m-wheeler93.github.io/hovers/" target="_blank">
+            View Project <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+         </button>       
       </div> 
    </section>
 
@@ -85,7 +99,10 @@
          <video class="react-video" controls muted>
             <source src="videos/todo_list_demo (720p).mp4">
          </video> 
-         <h3>Todo List</h3> 
+         <h3>Todo List</h3>
+         <p class="react-text">
+            Simple, quick, straightforward Todo List.
+         </p>
       </div>
    
       <div class="react-project"> 
@@ -93,6 +110,9 @@
             <source src="videos/dice_game_demo (720p).mp4">
          </video> 
          <h3>Dice Roll</h3> 
+         <p class="react-text">
+            Roll 2 dice, dice are animated and button is disabled while rolling.
+         </p>
       </div>
    
       <div class="react-project"> 
@@ -100,6 +120,9 @@
             <source src="videos/pokemon_battle_demo (1080p).mp4">
          </video> 
          <h3>Random Pokemon "Battle"</h3> 
+         <p class="react-text">
+            Images pulled using API, randomly rearranges both teams and displays winner and loser based on team power totals.
+         </p>
       </div>
 
       <div class="react-project"> 
@@ -107,8 +130,10 @@
             <source src="videos/react_color_palettes_demo (720p).mp4">
          </video> 
          <h3>Interactive Color Palettes</h3> 
-      </div>
-   
+         <p class="react-text">
+            Select a palette, the brightness is changed with a slider, select a color and the code value is copied to clipboard, and the code format choice can be selected (hex, rgb, rgba).
+         </p>
+      </div>  
    </section>
 
    <section class="category" id="contact">
@@ -141,13 +166,14 @@
          <a href="https://github.com/m-wheeler93" target="_blank">
             <i class="fa-brands fa-github"></i>
          </a>
-         <a href="https://github.com/m-wheeler93" target="_blank">
+         <a href="https://www.linkedin.com/in/mwheel93/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
          </a>
          <br/>
          Let's make some magic!
-         <i class="fa-solid fa-wand-sparkles"></i>
-         <br/>
+        <a href="https://m-wheeler93.github.io/boxes/" target="_blank"> <i  id="magic" class="fa-solid fa-wand-sparkles"> 
+            </i>
+        </a>
       </p>
    </footer>
    
