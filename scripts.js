@@ -1,38 +1,44 @@
-// GLOBAL VARIABLES
+//  GLOBAL VARIABLES
 const body = document.querySelector("body");
-const sections = document.querySelectorAll("section");
-const navbar = document.querySelector("nav");
-const navItems = document.querySelectorAll(".nav-link");
-const openNavBtn = document.querySelector("#open-nav");
-const closeNavBtn = document.querySelector("#close-nav");
+const nav = document.querySelector("nav");
+const navToggler = document.querySelector("#nav-toggler");
+const modeToggleBtn = document.querySelector("#mode-toggler");
 
-// OPEN NAV
-function openNav() {
-	openNavBtn.classList.add("hide");
-	closeNavBtn.classList.add("show");
-	navbar.classList.add("show");
-}
+// TOGGLE NAV MENU
+const toggleMenu = () => {
+	nav.classList.toggle("sidebar");
+};
+navToggler.addEventListener("click", toggleMenu);
 
-openNavBtn.addEventListener("click", openNav);
+// DARK / LIGHT MODE TOGGLE
+const toggleMode = () => {
+	const moon = document.querySelector(".fa-moon");
+	const sun = document.querySelector(".fa-sun");
+	const logo = document.querySelector("#logo");
+	body.classList.toggle("light");
+	if (body.classList.contains("light")) {
+		sun.style.display = "none";
+		moon.style.display = "block";
+		logo.src = "images/logo1-light.png";
+	} else {
+		sun.style.display = "block";
+		moon.style.display = "none";
+		logo.src = "images/logo1.png";
+	}
+};
+modeToggleBtn.addEventListener("click", toggleMode);
 
-// CLOSE NAV
-function closeNav() {
-	openNavBtn.classList.remove("hide");
-	closeNavBtn.classList.remove("show");
-	navbar.classList.remove("show");
-}
-
-closeNavBtn.addEventListener("click", closeNav);
-
-// NAV ITEMS ACTIVE ON SCROLL
-function activeLink() {
+// SET NAV ITEM ACTIVE BASED ON PAGE POSITION
+const activeLink = () => {
+	const sections = document.querySelectorAll("section");
+	const navLinks = document.querySelectorAll(".nav-links a");
 	let index = sections.length;
 
-	while (--index && window.scrollY + 150 < sections[index].offsetTop) {}
+	while (--index && window.scrollY + 250 < sections[index].offsetTop) {}
 
-	navItems.forEach((link) => link.classList.remove("active"));
-	navItems[index].classList.add("active");
-}
+	navLinks.forEach((link) => link.classList.remove("active"));
+	navLinks[index].classList.add("active");
+};
 
 activeLink();
 window.addEventListener("scroll", activeLink);

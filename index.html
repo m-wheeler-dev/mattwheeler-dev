@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Matthew Wheeler" />
 		<!-- FAVICON -->
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 		<!-- STYLESHEET -->
@@ -21,190 +22,201 @@
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 	</head>
 	<body>
-		<div id="open-nav">
-			<i class="fa-solid fa-bars-staggered"></i>
-		</div>
+		<i class="fa-solid fa-bars-staggered" id="nav-toggler"></i>
 		<nav>
-			<div id="close-nav">
-				<i class="fa-solid fa-xmark"></i>
+			<img id="logo" src="images/logo1.png" alt="an M and a W" />
+			<div class="nav-links">
+				<a href="#intro">Intro</a>
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
 			</div>
-			<a href="#top" class="nav-link">INTRO</a>
-			<a href="#about" class="nav-link">ABOUT</a>
-			<a href="#projects" class="nav-link">PROJECTS</a>
-			<a href="#contact" class="nav-link">CONTACT</a>
+			<div id="mode-toggler">
+				<i class="fa-regular fa-sun"></i>
+				<i class="fa-regular fa-moon"></i>
+			</div>
 		</nav>
-		<section id="introduction">
-			<div id="intro">
+
+		<section id="intro">
+			<div id="intro-text">
 				<h1>
-					Hi, I'm Matthew, and I'm a Web Developer
+					Hello, my name is Matthew, and I'm a Web Developer!
 					<i class="fa-solid fa-code"></i>
 				</h1>
-				<a href="#about"> Learn More</a>
-				<p id="about-tease">You know you want to!</p>
+
+				<a href="#contact" id="intro-btn">Let's Do A Thing!</a>
+				<p>
+					<i class="fa-solid fa-arrow-up"></i>
+					You know you want to!
+				</p>
 			</div>
 
 			<div id="most-recent">
-				<p>Check out my most recent project:</p>
+				<h3>Check out my most recent project:</h3>
 				<img
 					src="images/wordle-clone-thumb.png"
 					alt="thumbnail of a wordle clone I built with ReactJS"
 				/>
 				<a href="https://react-wordle-clone-5beb4.web.app/" target="_blank"
-					>{ Wordle Clone built with ReactJS }</a
+					>{ Wordle For The Web built with ReactJS }</a
 				>
 			</div>
 		</section>
 
 		<section id="about">
-			<div id="about-summary">
-				<h2>About Me</h2>
+			<h2>About Me</h2>
 
-				<p>
-					As a lifelong problem solver, web development has given me the
-					ever-evolving puzzle I needed. I really enjoy front-end work as I love
-					creating smooth, responsive, and interactive user experiences. I
-					prefer coding projects from scratch, and my clients tend to agree that
-					it allows them more flexibility when building their front-end.
-				</p>
-			</div>
-
-			<div id="toolkit">
-				<h2>My Toolkit</h2>
-				<ul>
-					<li>
-						Semantic HTML
-						<img src="images/html-logo.png" alt="Logo for HTML5" />
-					</li>
-					<li>
-						CSS (SaSS, and some experience with frameworks like Foundation CSS
-						as well)
-						<img src="images/css-logo.png" alt="Logo for CSS3" />
-					</li>
-					<li>
-						JavaScript
-						<img src="images/js-logo.png" alt="Logo for JavaScript" />
-					</li>
-					<li>
-						The ability to adopt new tech stacks if necessary, such as Ruby on
-						Rails!
-						<p id="preferred">Your preferred tech stack goes here!</p>
-					</li>
-				</ul>
-			</div>
+			<p>
+				Skilled and determined Web Developer who enjoys designing, developing,
+				and maintaining responsive and user-friendly websites and web
+				applications. Proficient in a variety of web technologies, including
+				HTML, CSS, JavaScript, and React. Committed to delivering clean,
+				maintainable, and scalable code while following best practices.
+				<span
+					>Long story short: I enjoy my work, and you'll enjoy working with
+					me!</span
+				>
+			</p>
 		</section>
 
 		<section id="projects">
 			<h2>Some Of My Work</h2>
 			<div class="project">
-				<h3 class="project-title">"Become a Dasher" Page Clone</h3>
+				<h4>"Become a Dasher" Page Clone</h4>
 				<img
 					class="project-thumb"
 					src="images/dasher-clone.png"
 					alt="thumbnail of become a dasher page clone"
 				/>
-				<div class="project-links">
-					<a
-						href="https://github.com/m-wheeler-dev/dasher-clone"
-						target="_blank"
-					>
-						GitHub Repo
-					</a>
-					<a
-						href="https://m-wheeler-dev.github.io/dasher-clone/"
-						target="_blank"
-					>
-						Live Demo
-					</a>
+				<div class="project-desc">
+					<p>
+						I really enjoy figuring out how to build something by simply looking
+						at it and then building it myself. That's exactly what I did here, I
+						looked over DoorDash's 'Become a Dasher' page and rebuilt it myself
+						from scratch! It was similar to trying to assemble furniture without
+						allowing yourself to view the instructions at all, but it was way
+						more fun and I didn't hammer my thumb!
+					</p>
+					<div class="project-links">
+						<a
+							href="https://github.com/m-wheeler-dev/dasher-clone"
+							target="_blank"
+						>
+							GitHub Repo
+						</a>
+						<a
+							href="https://m-wheeler-dev.github.io/dasher-clone/"
+							target="_blank"
+						>
+							Live Demo
+						</a>
+					</div>
 				</div>
 			</div>
 
 			<div class="project">
-				<h3 class="project-title">Space Invaders</h3>
+				<h4 class="project-title">Space Invaders</h4>
 				<img
 					class="project-thumb"
 					src="images/space-invaders-thumb.png"
 					alt="thumbnail of space invaders"
 				/>
-				<div class="project-links">
-					<a
-						href="https://github.com/m-wheeler-dev/space-invaders"
-						target="_blank"
-					>
-						GitHub Repo
-					</a>
-					<a
-						href="https://m-wheeler-dev.github.io/space-invaders/"
-						target="_blank"
-					>
-						Live Demo
-					</a>
+				<div class="project-desc">
+					<p>
+						As a lifelong gaming enthusiast (AKA Gamer), I felt like I had to
+						make at least a few games. I rememberred playing Space Invaders at
+						the arcade 20 years ago and so I wanted to make an updated version.
+						Not only is it playable on the web, but I like to think the visuals
+						are a bit better than the original! (No hate!)
+					</p>
+					<div class="project-links">
+						<a
+							href="https://github.com/m-wheeler-dev/space-invaders"
+							target="_blank"
+						>
+							GitHub Repo
+						</a>
+						<a
+							href="https://m-wheeler-dev.github.io/space-invaders/"
+							target="_blank"
+						>
+							Live Demo
+						</a>
+					</div>
 				</div>
 			</div>
 
 			<div class="project">
-				<h3 class="project-title">Hover Colors!</h3>
+				<h4 class="project-title">Hover Colors!</h4>
 				<img
 					class="project-thumb"
 					src="images/hover-colors-thumb.png"
 					alt="thumbnail of the hover colors project"
 				/>
-				<div class="project-links">
-					<a href="https://github.com/m-wheeler-dev/hovers" target="_blank">
-						GitHub Repo
-					</a>
-					<a href="https://m-wheeler-dev.github.io/hovers/" target="_blank">
-						Live Demo
-					</a>
+				<div class="project-desc">
+					<p>
+						If you like bright, randomized colors (or maybe you want to see if
+						you might be colorblind) then this is for you! It's pretty
+						self-explanatory, hover over the boxes and they become one of the
+						random colors in the array. Once you leave that box, a timeout
+						function runs and the color fades away. Like trying to write your
+						name in the air with a torch, but way more colorful!
+					</p>
+					<div class="project-links">
+						<a href="https://github.com/m-wheeler-dev/hovers" target="_blank">
+							GitHub Repo
+						</a>
+						<a href="https://m-wheeler-dev.github.io/hovers/" target="_blank">
+							Live Demo
+						</a>
+					</div>
 				</div>
 			</div>
 
 			<div class="project">
-				<h3 class="project-title">Memory Game</h3>
+				<h4 class="project-title">Memory Game</h4>
 				<img
 					class="project-thumb"
 					src="images/memory-game-thumb.png"
 					alt="thumbnail of a memory game project"
 				/>
-				<div class="project-links">
-					<a href="https://github.com/m-wheeler-dev/memory" target="_blank">
-						GitHub Repo
-					</a>
-					<a href="https://m-wheeler-dev.github.io/memory/" target="_blank">
-						Live Demo
-					</a>
+				<div class="project-desc">
+					<p>
+						Well, everyone's seen a memory game at some point, but this one has
+						cute animals! Not just that, it keeps score and congratulates you
+						when you win. If you're curious: the white cat was the amazing Max,
+						the white dog is the incredible Cooper, and the rest are not pets
+						that I've met. I have to admit, I'd love a red panda for a pet!
+					</p>
+					<div class="project-links">
+						<a href="https://github.com/m-wheeler-dev/memory" target="_blank">
+							GitHub Repo
+						</a>
+						<a href="https://m-wheeler-dev.github.io/memory/" target="_blank">
+							Live Demo
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="contact">
 			<h2>Contact Me</h2>
-			<form
-				id="contact-form"
-				action="https://formspree.io/f/xlezjwor"
-				method="POST"
-			>
-				<label for="_replyto"
-					>Email:
-					<br />
-					<input
-						id="_replyto"
-						type="email"
-						name="_replyto"
-						placeholder="Please enter your Email..."
-					/>
-				</label>
-				<br />
+			<form action="https://formspree.io/f/xlezjwor" method="POST">
+				<label for="_replyto">Email: </label>
+				<input
+					id="_replyto"
+					type="email"
+					name="_replyto"
+					placeholder="Please enter your Email..."
+				/>
 
-				<label for="message">
-					Message:
-					<br />
-					<textarea
-						id="message"
-						name="message"
-						placeholder="Type your message here..."
-					></textarea>
-				</label>
-				<br />
+				<label for="message"> Message: </label>
+				<textarea
+					id="message"
+					name="message"
+					placeholder="Type your message here..."
+				></textarea>
 
 				<button type="submit">Send It!</button>
 			</form>
