@@ -529,18 +529,21 @@ body.light #magic i {
 	/* NAV (SIDEBAR) */
 	#nav-toggler {
 		cursor: pointer;
-		height: fit-content;
-		width: fit-content;
-		font-size: 1.25rem;
-		padding: 0.5rem;
+		height: 2.5rem;
+		width: 2.5rem;
 		background-color: var(--secondary);
 		border: var(--border-dark);
 		border-radius: var(--radius);
-		display: block;
+		display: grid;
+		place-items: center;
 		position: fixed;
 		top: 1rem;
 		left: 1rem;
 		z-index: 1;
+	}
+
+	#nav-toggler .fa-xmark {
+		display: none;
 	}
 
 	#nav-toggler:hover {
