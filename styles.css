@@ -520,7 +520,7 @@ body.light #magic i {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 	.nav-links,
 	#intro,
 	.project {
