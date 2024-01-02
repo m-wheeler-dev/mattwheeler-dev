@@ -1,18 +1,14 @@
-<h1>Mattwheeler-dev.com</h1>
+<h1>Matthew Wheeler</h1>
+<h3>Front-End Developer</h3>
 
-<img width="500" alt="Screenshot 2023-12-20 at 4 40 28 PM" src="https://github.com/m-wheeler-dev/mattwheeler-dev/assets/105622101/da72b358-3e19-4562-b465-03d3d0f0d665">
+<h3>Contact Me</h3>
 
-<h3>Key Features:</h3>
-<ul>
-  <li>Dark / Light mode</li>
-  <li>Responsive design</li>
-  <li>Position tracking for highlighting nav items</li>
-  <li>Smooth scroll behavior</li>
-  <li>Contact form powered by FormSpree</li>
-</ul>
+<a href="https://mattwheeler-dev.com" target="_blank">
+  <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" />
+</a>
 
-<p>This is the code I wrote when I built my portfolio / website.</p>
+<br/>
 
-<p>Feel free to send any feedback or ask any questions you may have.</p>
-
-<p>You can find the live version here: https://mattwheeler-dev.com</p>
+<a href="https://www.linkedin.com/in/mwheel93/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
