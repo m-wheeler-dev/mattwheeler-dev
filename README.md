@@ -1,5 +1,5 @@
 <h1>Matthew Wheeler</h1>
-<h3>Front-End Developer</h3>
+<h2>Front-End Developer</h3>
 
 <h3>Contact Me</h3>
 
