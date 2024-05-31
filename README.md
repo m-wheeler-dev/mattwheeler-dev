@@ -1,7 +1,4 @@
 <h1>Matthew Wheeler</h1>
-<h2>Front-End Developer</h3>
-
-<h3>Contact Me</h3>
 
 <a href="https://mattwheeler-dev.com" target="_blank">
   <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" />
